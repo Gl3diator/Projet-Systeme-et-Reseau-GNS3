@@ -1,88 +1,34 @@
-\# Projet Système et Réseau GNS3
+# Projet Système et Réseau GNS3
 
+## 🚀 Project Overview
 
+**Projet Système et Réseau GNS3** is a network infrastructure simulation project built using **GNS3**. The project aims to simulate a complete enterprise network with **inter-departmental connectivity**, **routing protocols**, **VLAN configurations**, **firewall rules**, and **network security policies**.
 
-\## Description
-
-
-
-\*\*Projet Système et Réseau GNS3\*\* is a network infrastructure simulation project built using \*\*GNS3\*\*. It aims to simulate an enterprise-grade network with \*\*inter-departmental connectivity\*\*, \*\*routing protocols\*\*, \*\*VLAN configurations\*\*, \*\*firewalls\*\*, and \*\*security policies\*\*. The project is designed for educational and testing purposes, offering a hands-on approach to understanding network systems and configurations.
-
-
+This project is designed to simulate realistic network environments for **education**, **training**, and **testing**. It demonstrates how to configure network devices such as **routers**, **switches**, and **firewalls** to achieve **secure, scalable, and efficient network topologies**.
 
 ---
 
+## 🔑 Features
 
-
-\## Project Structure
-
-
-
-This repository contains the complete configuration for a GNS3-based network infrastructure simulation:
-
-
-
-\- \*\*Backbone Network Configuration\*\*: Core router, switch, and firewall setups for inter-department communication.
-
-\- \*\*Subnetting and IP Addressing\*\*: Detailed configuration of IP address allocation and routing protocols (OSPF, Static Routes, etc.).
-
-\- \*\*GNS3 Project File\*\*: Pre-configured GNS3 project file ready for import and testing.
-
-\- \*\*Security Configuration\*\*: VLANs, ACLs, and firewall rules for segmenting and securing the network.
-
-\- \*\*Documentation and Diagrams\*\*: Network topology diagrams, project architecture, and troubleshooting guides.
-
-
+- **Backbone Network Setup**: Core network devices configured to provide inter-department connectivity.
+- **Routing Protocols**: Configuration of **OSPF**, **EIGRP**, and **static routing** to manage traffic across departments.
+- **VLAN & Security**: **VLAN configuration**, **Access Control Lists (ACLs)**, and **firewall rules** for secure data flow between departments.
+- **Network Design**: A comprehensive network topology for testing various **enterprise-level** network scenarios.
+- **Documentation & Diagrams**: Detailed configuration files, network diagrams, and project structure to help users understand the setup.
 
 ---
 
+## 💻 Installation & Setup
 
+### Prerequisites
+Before you begin, make sure you have the following software installed:
 
-\## Features
+- **GNS3**: [Download and install GNS3](https://www.gns3.com/)
+- **Cisco Router and Switch Images**: Make sure you have valid **IOS images** for Cisco devices to run the simulation.
+- **Operating System**: This setup is compatible with **Windows**, **Linux**, and **MacOS**.
 
+### Cloning the Repository
 
-
-\- \*\*Backbone Network\*\*: Configurations for routers, switches, and firewalls to connect different departments.
-
-\- \*\*Routing Protocols\*\*: OSPF, static routes for inter-department routing.
-
-\- \*\*VLAN Configuration\*\*: Security and network segmentation using VLANs.
-
-\- \*\*Security\*\*: Firewalls and Access Control Lists (ACLs) to protect sensitive network areas.
-
-\- \*\*Network Design\*\*: Complete topology for simulating real-world enterprise networks.
-
-\- \*\*Documentation\*\*: Easy-to-follow guide on how to set up and use the GNS3 project.
-
-
-
----
-
-
-
-\## Requirements
-
-
-
-\- \*\*GNS3\*\*: \[Download GNS3](https://www.gns3.com/)
-
-\- \*\*Cisco Router and Switch Images\*\*: Ensure you have the appropriate device images to run the simulation.
-
-
-
----
-
-
-
-\## Setup Instructions
-
-
-
-1\. \*\*Clone the repository\*\*:
-
-&nbsp;  ```bash
-
-&nbsp;  git clone https://github.com/Gl3diator/Projet-Systeme-et-Reseau-GNS3.git
-
-
-
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/Gl3diator/Projet-Systeme-et-Reseau-GNS3.git
