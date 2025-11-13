@@ -56,13 +56,11 @@ This Code of Conduct applies to all spaces managed by the project, including Git
 
 \## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at \[Your Email]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at \[ghaithbensalah1999@gmail.com]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.
 
 
 
 \## Attribution
 
 This Code of Conduct is adapted from the \[Contributor Covenant](https://www.contributor-covenant.org/).
-
-
 
