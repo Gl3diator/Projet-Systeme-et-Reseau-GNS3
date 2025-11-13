@@ -1,0 +1,45 @@
+Nov 11 10:35:35.195 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 11 10:35:35.197 HYPERVISOR: Started on IP = localhost, TCP port = 50269.
+Nov 11 10:35:35.351 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 11 10:35:35.353 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips 
+Nov 11 10:35:35.358 GENERAL: working_dir=C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips
+Nov 11 10:35:35.359 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips\a9571188-8072-4d69-90ce-0210b9106076 
+Nov 11 10:35:35.360 GENERAL: working_dir=C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips\a9571188-8072-4d69-90ce-0210b9106076
+Nov 11 10:35:35.360 HYPERVISOR: exec_cmd: vm create RI 1 c3745 
+Nov 11 10:35:35.364 VM: VM RI created.
+Nov 11 10:35:35.366 HYPERVISOR: exec_cmd: vm set_con_tcp_port RI 5000 
+Nov 11 10:35:35.367 HYPERVISOR: exec_cmd: c3745 get_mac_addr RI 
+Nov 11 10:35:35.368 HYPERVISOR: exec_cmd: vm set_disk0 RI 0 
+Nov 11 10:35:35.369 HYPERVISOR: exec_cmd: vm set_exec_area RI 64 
+Nov 11 10:35:35.371 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.372 HYPERVISOR: exec_cmd: vm set_idle_pc RI 0x60aa1da0 
+Nov 11 10:35:35.375 HYPERVISOR: exec_cmd: vm set_ios RI C:/Users/USER/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 11 10:35:35.377 HYPERVISOR: exec_cmd: c3745 set_mac_addr RI c401.35d4.0000 
+Nov 11 10:35:35.379 HYPERVISOR: exec_cmd: vm set_nvram RI 256 
+Nov 11 10:35:35.380 HYPERVISOR: exec_cmd: vm set_ram RI 256 
+Nov 11 10:35:35.382 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.383 HYPERVISOR: exec_cmd: vm slot_add_binding RI 1 0 NM-1FE-TX 
+Nov 11 10:35:35.385 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.385 HYPERVISOR: exec_cmd: vm slot_add_binding RI 2 0 NM-1FE-TX 
+Nov 11 10:35:35.387 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.388 HYPERVISOR: exec_cmd: vm slot_add_binding RI 3 0 NM-1FE-TX 
+Nov 11 10:35:35.390 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.391 HYPERVISOR: exec_cmd: vm slot_add_binding RI 4 0 NM-4T 
+Nov 11 10:35:35.393 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.393 HYPERVISOR: exec_cmd: vm slot_add_binding RI 0 16 WIC-1T 
+Nov 11 10:35:35.395 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.396 HYPERVISOR: exec_cmd: vm slot_add_binding RI 0 32 WIC-1T 
+Nov 11 10:35:35.398 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:35.399 HYPERVISOR: exec_cmd: vm slot_add_binding RI 0 48 WIC-1T 
+Nov 11 10:35:38.410 HYPERVISOR: exec_cmd: nio create_udp udp-871b1c48-cc51-435d-8780-3b53fed9e6cb 25002 127.0.0.1 25003 
+Nov 11 10:35:39.279 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 0 1 udp-871b1c48-cc51-435d-8780-3b53fed9e6cb 
+Nov 11 10:35:39.281 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:40.319 HYPERVISOR: exec_cmd: nio create_udp udp-fae1a3c6-9aef-49ae-a13a-2de39e06eef6 25008 127.0.0.1 25009 
+Nov 11 10:35:40.328 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 1 0 udp-fae1a3c6-9aef-49ae-a13a-2de39e06eef6 
+Nov 11 10:35:40.330 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:41.365 HYPERVISOR: exec_cmd: nio create_udp udp-6f24a0f1-cc9d-4b6a-99db-1f8a2aebbc4a 25014 127.0.0.1 25015 
+Nov 11 10:35:41.374 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 3 0 udp-6f24a0f1-cc9d-4b6a-99db-1f8a2aebbc4a 
+Nov 11 10:35:41.376 HYPERVISOR: exec_cmd: vm get_status RI 
+Nov 11 10:35:43.352 HYPERVISOR: exec_cmd: nio create_udp udp-4233b2f8-667e-44c0-8823-a703c4927391 25022 127.0.0.1 25023 
+Nov 11 10:35:43.361 HYPERVISOR: exec_cmd: vm slot_add_nio_binding RI 2 0 udp-4233b2f8-667e-44c0-8823-a703c4927391 
+Nov 11 10:35:43.363 HYPERVISOR: exec_cmd: vm get_status RI 

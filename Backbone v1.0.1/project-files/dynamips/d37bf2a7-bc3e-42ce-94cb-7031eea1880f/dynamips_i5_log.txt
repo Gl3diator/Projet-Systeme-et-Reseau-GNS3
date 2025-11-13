@@ -1,0 +1,39 @@
+Nov 11 09:51:29.655 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 11 09:51:29.657 HYPERVISOR: Started on IP = localhost, TCP port = 54322.
+Nov 11 09:51:30.100 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 11 09:51:30.102 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips 
+Nov 11 09:51:30.103 GENERAL: working_dir=C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips
+Nov 11 09:51:30.103 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips\ffd79f62-d7e1-49f6-9d52-e7af6c3cc206 
+Nov 11 09:51:30.105 GENERAL: working_dir=C:\Users\USER\GNS3\projects\Backbone v1.0.0\project-files\dynamips\ffd79f62-d7e1-49f6-9d52-e7af6c3cc206
+Nov 11 09:51:30.106 HYPERVISOR: exec_cmd: vm create RZ-3 4 c3745 
+Nov 11 09:51:30.109 VM: VM RZ-3 created.
+Nov 11 09:51:30.111 HYPERVISOR: exec_cmd: vm set_con_tcp_port RZ-3 5003 
+Nov 11 09:51:30.112 HYPERVISOR: exec_cmd: c3745 get_mac_addr RZ-3 
+Nov 11 09:51:30.113 HYPERVISOR: exec_cmd: vm set_disk0 RZ-3 0 
+Nov 11 09:51:30.114 HYPERVISOR: exec_cmd: vm set_exec_area RZ-3 64 
+Nov 11 09:51:30.116 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.117 HYPERVISOR: exec_cmd: vm set_idle_pc RZ-3 0x60aa1da0 
+Nov 11 09:51:30.120 HYPERVISOR: exec_cmd: vm set_ios RZ-3 C:/Users/USER/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Nov 11 09:51:30.122 HYPERVISOR: exec_cmd: c3745 set_mac_addr RZ-3 c404.610c.0000 
+Nov 11 09:51:30.124 HYPERVISOR: exec_cmd: vm set_nvram RZ-3 256 
+Nov 11 09:51:30.126 HYPERVISOR: exec_cmd: vm set_ram RZ-3 256 
+Nov 11 09:51:30.127 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.128 HYPERVISOR: exec_cmd: vm slot_add_binding RZ-3 1 0 NM-1FE-TX 
+Nov 11 09:51:30.130 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.130 HYPERVISOR: exec_cmd: vm slot_add_binding RZ-3 2 0 NM-1FE-TX 
+Nov 11 09:51:30.133 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.134 HYPERVISOR: exec_cmd: vm slot_add_binding RZ-3 3 0 NM-1FE-TX 
+Nov 11 09:51:30.136 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.136 HYPERVISOR: exec_cmd: vm slot_add_binding RZ-3 0 16 WIC-1T 
+Nov 11 09:51:30.138 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.139 HYPERVISOR: exec_cmd: vm slot_add_binding RZ-3 0 32 WIC-1T 
+Nov 11 09:51:30.141 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:30.141 HYPERVISOR: exec_cmd: vm slot_add_binding RZ-3 0 48 WIC-1T 
+Nov 11 09:51:35.091 HYPERVISOR: exec_cmd: nio create_udp udp-6775e7ae-f4a1-416e-a68f-a58f791d8508 10020 127.0.0.1 10021 
+Nov 11 09:51:35.104 HYPERVISOR: exec_cmd: vm get_status RZ-3 
+Nov 11 09:51:35.110 HYPERVISOR: exec_cmd: vm extract_config RZ-3 
+Nov 11 09:51:35.122 HYPERVISOR: exec_cmd: vm delete RZ-3 
+Nov 11 09:51:35.122 VM: VM RZ-3 destroyed.
+Nov 11 09:51:35.126 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 11 09:51:35.169 HYPERVISOR: Stopped.
+Nov 11 09:51:35.169 GENERAL: reset done.
