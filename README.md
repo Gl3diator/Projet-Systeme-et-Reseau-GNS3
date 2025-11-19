@@ -172,22 +172,124 @@ ping google.com
 
 ---
 
-## ✅ 9. Status
+# UDP Tunnel + OSPF Setup (RZ-4 ↔ R-NFS)  
+### With Clean Steps + ASCII Diagrams
+
+---
+
+# ⭐ 1. Overview
+
+This document explains **ONLY the steps starting from the UDP TUNNEL creation**, including:
+
+- UDP Tunnel between **RZ‑4** and **R‑NFS**  
+- Tunnel IP configuration  
+- OSPF adjacency over the tunnel  
+- NFS LAN advertisement  
+- Routing verification  
+- ASCII diagrams
+
+No NAT, no DB department here.
+
+---
+
+# ⭐ 2. ASCII Network Diagram (Tunnel + Backbone)
+
+```
+                 +-------------------------------------+
+                 |     FULL-MESH BACKBONE               |
+                 |  (200.200.20.x /30 links)            |
+                 +------------------------------------+
+                   |         |         |             |    
+                   |         |         |             |
+               +-------+  +-------+  +-------+   +-------+
+               | RZ-1  |  | RZ-2  |  | RZ-3  |   | RZ-4  |
+               +-------+  +-------+  +-------+   +-------+
+                                                     |
+                                                     |
+                                UDP Tunnel (L2 over Internet)
+                                             |
+                                             |
+                           WiFi Backbone IP ↔ WiFi NFS-Dep IP
+                                             |
+                                             |
+                                       +-----------+
+                                       |  R-NFS    |
+                                       +-----------+
+                                             |
+                                             |
+                                   NFS LAN 172.24.74.0/24
+```
+
+
+---
+
+# ⭐ 3. Required Information
+
+| Component | Value |
+|----------|--------|
+| Your WiFi IP | **Backbone wifi ip** |
+| Friend WiFi IP | **NFS wifi ip** |
+| Backbone Tunnel Port | 30000 |
+| NFS Tunnel Port | 30001 |
+| RZ‑4 Tunnel IP | 10.0.0.1/24 |
+| R‑NFS Tunnel IP | 10.0.0.2/24 |
+| NFS LAN | 172.24.74.0/24 |
+
+---
+
+# ⭐ 4. Test Basic Tunnel Connectivity
+
+### From RZ‑4:
+```
+ping 10.0.0.2
+```
+
+### From R‑NFS:
+```
+ping 10.0.0.1
+```
+
+
+---
+
+# ⭐ 5. Diagram (Tunnel Interfaces Only)
+
+```
+               RZ-4                                R-NFS
+      +-----------------+                       +-----------------+
+      | Fa1/0           |                       | Fa0/1           |
+      | 10.0.0.1/24     | ← UDP Tunnel →        | 10.0.0.2/24     |
+      +-----------------+                       +-----------------+
+                ^                                          ^
+                |                                          |
+     UDP 30000 →●                                          ●← UDP 30001
+                |                                          |
+        Local: Backbone WIFI ip                   Local: NFS WIFI ip
+```
+
+
+
+
+---
+## ✅  Status
 
 ✔ Backbone complete  
 ✔ OSPF operational  
 ✔ NAT working  
 ✔ ACL  
 ✔ Internet access confirmed  
-✔ Ready for LAN integration  
+✔ Working **cross‑PC UDP tunnel**  :
+
+        - Layer‑2 connectivity between routers  
+        - Tunnel IPs (10.0.0.1 ↔ 10.0.0.2)  
+        - OSPF adjacency across the tunnel  
+        - NFS LAN advertised dynamically  
+        - Backbone + department integration complete  
 
 ---
 
 ## 📌 Future Work
 
 I will later add:
-
 - **VPN**  
-- **ACL rules**  
 - **Firewall**  
-
